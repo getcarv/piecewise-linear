@@ -130,7 +130,7 @@ impl<T: CoordFloat> PiecewiseLinearFunction<T> {
     pub fn points_of_inflection_iter<'a>(
         &'a self,
         other: &'a PiecewiseLinearFunction<T>,
-    ) -> Option<PointsOfInflectionIterator<T>> {
+    ) -> Option<PointsOfInflectionIterator<'a, T>> {
         if !self.has_same_domain_as(other) {
             None
         } else {

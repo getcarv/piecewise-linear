@@ -13,8 +13,8 @@ categories = ["data-structure", "science"]
 keywords = ["math"]
 
 [dependencies]
-geo = "0.29.1"
-num-traits = "0.2.8"
+geo = "0.30.0"
+num-traits = "0.2.19"
 serde = { version = "1.0", optional = true, features = ["derive"] }
 
 [features]
